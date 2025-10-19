@@ -3,11 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🐛 Oruguitas Heidelberg</title>
+    <title>Oruguitas Heidelberg</title>
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+    <link rel="shortcut icon" href="/assets/images/favicon.ico">
+    <!-- Add Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
     <header>
@@ -18,9 +24,7 @@
                 <span class="logo-text">Oruguitas Heidelberg</span>
             </div>
             <div class="language-switcher">
-    
-        <a href="/de/" class="lang-link">🇩🇪 Deutsch</a>
-    
+    <a href="/es/" class="lang-link">🇪🇸 ES</a> <a href="/de/" class="lang-link">🇩🇪 DE</a>
 </div>
         </div>
     </nav>
@@ -31,18 +35,25 @@
 <section class="hero">
     <div class="container">
         <div class="hero-content">
-            <h1 class="hero-title">¡Bienvenidos a Oruguitas Heidelberg!</h1>
+            <h1 class="hero-title">¡Bienvenidos a 🐛 Oruguitas Heidelberg!</h1>
             <p class="hero-subtitle">Encuentros semanales para familias hispanohablantes</p>
             <div class="meeting-info">
-                <div class="info-item">📅 Todos los viernes</div>
-                <div class="info-item">🕐 10:00 - 12:00</div>
-                <div class="info-item">📍 Heidelberg (ubicación en el grupo de WhatsApp)</div>
+                <div class="info-item">📅 Todos los lunes</div>
+                <div class="info-item">🕐 16:00 - 18:00</div>
+                <div class="info-item">
+                    📍 Mehrgenerationenhaus Heidelberg
+                    <p class="info-subitem">
+                        <a href="https://www.google.com/maps/search/%F0%9F%93%8D+Mehrgenerationenhaus+Heidelberg" target="_blank" rel="noopener noreferrer">
+                        Heinrich-Fuchs-Straße 85, 69126 Heidelberg
+                    </a>
+                    </p>
+                </div>
             </div>
             <p class="hero-description">Un espacio acogedor donde los más pequeños cantan, juegan, leen y comparten. ¡Familias hispanohablantes, están invitadas!</p>
             <a href="#contacto" class="cta-button">¡Únete a nosotros!</a>
         </div>
         <div class="hero-illustration">
-            <div class="wolf-emoji">🐺</div>
+            <img src="/assets/images/oruguitas-logo.png" alt="Oruguitas Logo" class="hero-logo" loading="lazy">
         </div>
     </div>
 </section>
@@ -71,7 +82,32 @@
 <section id="noticias" class="section news">
     <div class="container">
         <h2 class="section-title">Noticias</h2>
-        <p>No hay noticias recientes. ¡Visítanos pronto!</p>
+        <!--p>No hay noticias recientes. ¡Visítanos pronto!</p!-->
+        <style>
+        .news-cards { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1rem; }
+        .news-card { background: #ffffff7d; padding: 1rem; border-radius: 8px; box-shadow: 0 1px 4px rgba(0,0,0,0.1); width: 100%; max-width: 320px; box-sizing: border-box; }
+        .news-card a { text-decoration: none; color: inherit; font-weight: 600; display: block; margin-bottom: .5rem; }
+        .news-excerpt { margin: 0; color: #555; font-size: .95rem; }
+        @media (min-width: 900px) {
+            .news-card { flex: 1 1 calc(33.333% - 1rem); max-width: none; }
+        }
+        </style>
+
+        <div class="news-cards">
+            
+            <article class="news-card">
+                <a href="/2025/10/18/Continuamos/">18.10.2025 - Continuamos</a>
+                <p class="news-excerpt">Nuestro segundo encuentro
+</p>
+            </article>
+            
+            <article class="news-card">
+                <a href="/2025/10/01/Empezamos/">1.10.2025 - Empezamos</a>
+                <p class="news-excerpt">Nuestro primer encuentro
+</p>
+            </article>
+            
+        </div>
     </div>
 </section>
 
@@ -99,7 +135,24 @@
                 <div class="contact-icon">📧</div>
                 <h3>Email</h3>
                 <p>Envíanos un correo</p>
-                <a href="mailto:Oruguitas.heidelberg@gmail.com">Oruguitas.heidelberg@gmail.com</a>
+                <a href="mailto:oruguitas.heidelberg@gmail.com">oruguitas.heidelberg@gmail.com</a>
+            </div>
+        </div>
+        <div class="instagram-follow">
+            <h3>Síguenos en Instagram</h3>
+            <a class="instagram-link" href="https://www.instagram.com/las_oruguitas_heidelberg/" target="_blank" rel="noopener noreferrer" aria-label="Abrir Instagram de las_oruguitas_heidelberg">
+                <span class="instagram-icon" aria-hidden="true">
+                    <i class="fab fa-instagram" aria-hidden="true" style="font-size:2rem; line-height:1;"></i>
+                </span>
+                <span class="instagram-handle">@las_oruguitas_heidelberg</span>
+            </a>
+        </div>
+        <div class="sponsors">
+            <h4>Con el apoyo de</h4>
+            <div class="sponsors-list">
+            <a href="https://www.mgh-heidelberg.de/" target="_blank" rel="noopener noreferrer" class="sponsor" aria-label="Ir a Mehrgenerationenhaus Heidelberg">
+                <img src="/assets/images/mgh-hd.png" alt="Mehrgenerationenhaus Heidelberg logo" class="sponsor-logo" loading="lazy">
+            </a>
             </div>
         </div>
     </div>
@@ -109,7 +162,7 @@
 
 <footer>
     <div class="container">
-        <p>Oruguitas Heidelberg. Una comunidad de familias hispanohablantes en Heidelberg.</p>
+        <p>🐛 Oruguitas Heidelberg. Una comunidad de familias hispanohablantes en Heidelberg.</p>
     </div>
 </footer>
 </body>

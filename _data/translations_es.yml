@@ -7,9 +7,10 @@ nav:
 hero:
   title: "¡Bienvenidos a 🐛 Oruguitas Heidelberg!"
   subtitle: Encuentros semanales para familias hispanohablantes
-  meeting_day: "📅 Todos los viernes"
-  meeting_time: "🕐 10:00 - 12:00"
-  meeting_place: "📍 Mehrgenerationenhaus Heidelberg - Heinrich-Fuchs-Straße 85, 69126 Heidelberg"
+  meeting_day: "📅 Todos los lunes"
+  meeting_time: "🕐 16:00 - 18:00"
+  meeting_place: "📍 Mehrgenerationenhaus Heidelberg"
+  meeting_address: "Heinrich-Fuchs-Straße 85, 69126 Heidelberg"
   cta: "¡Únete a nosotros!"
   description: "Un espacio acogedor donde los más pequeños cantan, juegan, leen y comparten. ¡Familias hispanohablantes, están invitadas!"
 

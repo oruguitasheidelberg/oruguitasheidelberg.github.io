@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang }}">
+<html lang="">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ site.title }}</title>
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <title>Oruguitas Heidelberg</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
@@ -16,10 +16,35 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
-    {% include header.html %}
+    <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-icon">🐛</span>
+                <span class="logo-text">Oruguitas Heidelberg</span>
+            </div>
+            <div class="language-switcher">
+    <a href="/es/" class="lang-link">🇪🇸 ES</a> <a href="/de/" class="lang-link">🇩🇪 DE</a>
+</div>
+        </div>
+    </nav>
+</header>
     <main>
-        {{ content }}
+        <article class="post">
+  <div class="post-content">
+    <h1 id="nuestro-segundo-encuentro">Nuestro segundo encuentro</h1>
+
+<p>Empezamos con toda el otoño con hojitas y calabazas!</p>
+
+  </div>
+</article>
     </main>
-    {% include footer.html %}
+    
+
+<footer>
+    <div class="container">
+        <p>🐛 Oruguitas Heidelberg. Eine Gemeinschaft spanischsprachiger Familien in Heidelberg.</p>
+    </div>
+</footer>
 </body>
 </html>

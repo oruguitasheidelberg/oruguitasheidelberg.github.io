@@ -13,13 +13,17 @@ lang: de
             <div class="meeting-info">
                 <div class="info-item">{{ t.hero.meeting_day }}</div>
                 <div class="info-item">{{ t.hero.meeting_time }}</div>
-                <div class="info-item">{{ t.hero.meeting_place }}</div>
+                <div class="info-item">
+                    <a href="https://www.google.com/maps/search/{{ t.hero.meeting_place | url_encode }}" target="_blank" rel="noopener noreferrer">
+                        {{ t.hero.meeting_place }}
+                    </a>
+                </div>
             </div>
             <p class="hero-description">{{ t.hero.description }}</p>
             <a href="#kontakt" class="cta-button">{{ t.hero.cta }}</a>
         </div>
         <div class="hero-illustration">
-            <div class="wolf-emoji">🐛</div>
+            <img src="{{ '/assets/images/oruguitas-logo.png' | relative_url }}" alt="Oruguitas Logo" class="hero-logo" loading="lazy">
         </div>
     </div>
 </section>

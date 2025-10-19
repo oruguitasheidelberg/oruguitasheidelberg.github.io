@@ -13,13 +13,20 @@ lang: es
             <div class="meeting-info">
                 <div class="info-item">{{ t.hero.meeting_day }}</div>
                 <div class="info-item">{{ t.hero.meeting_time }}</div>
-                <div class="info-item">{{ t.hero.meeting_place }}</div>
+                <div class="info-item">
+                    {{ t.hero.meeting_place }}
+                    <p class="info-subitem">
+                        <a href="https://www.google.com/maps/search/{{ t.hero.meeting_place | url_encode }}" target="_blank" rel="noopener noreferrer">
+                        {{ t.hero.meeting_address }}
+                    </a>
+                    </p>
+                </div>
             </div>
             <p class="hero-description">{{ t.hero.description }}</p>
             <a href="#contacto" class="cta-button">{{ t.hero.cta }}</a>
         </div>
         <div class="hero-illustration">
-            <div class="wolf-emoji">🐛</div>
+            <img src="{{ '/assets/images/oruguitas-logo.png' | relative_url }}" alt="Oruguitas Logo" class="hero-logo" loading="lazy">
         </div>
     </div>
 </section>
@@ -40,7 +47,25 @@ lang: es
 <section id="noticias" class="section news">
     <div class="container">
         <h2 class="section-title">{{ t.news.title }}</h2>
-        <p>{{ t.news.no_news }}</p>
+        <!--p>{{ t.news.no_news }}</p!-->
+        <style>
+        .news-cards { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1rem; }
+        .news-card { background: #ffffff7d; padding: 1rem; border-radius: 8px; box-shadow: 0 1px 4px rgba(0,0,0,0.1); width: 100%; max-width: 320px; box-sizing: border-box; }
+        .news-card a { text-decoration: none; color: inherit; font-weight: 600; display: block; margin-bottom: .5rem; }
+        .news-excerpt { margin: 0; color: #555; font-size: .95rem; }
+        @media (min-width: 900px) {
+            .news-card { flex: 1 1 calc(33.333% - 1rem); max-width: none; }
+        }
+        </style>
+
+        <div class="news-cards">
+            {% for post in site.posts limit:3 %}
+            <article class="news-card">
+                <a href="{{ post.url | relative_url }}">{{ post.date | date: "%-d.%m.%Y" }} - {{ post.title }}</a>
+                <p class="news-excerpt">{{ post.excerpt | strip_html | truncate:120 }}</p>
+            </article>
+            {% endfor %}
+        </div>
     </div>
 </section>
 
@@ -69,6 +94,23 @@ lang: es
                 <h3>Email</h3>
                 <p>{{ t.contact.email }}</p>
                 <a href="mailto:{{ t.contact.email_address }}">{{ t.contact.email_address }}</a>
+            </div>
+        </div>
+        <div class="instagram-follow">
+            <h3>Síguenos en Instagram</h3>
+            <a class="instagram-link" href="https://www.instagram.com/las_oruguitas_heidelberg/" target="_blank" rel="noopener noreferrer" aria-label="Abrir Instagram de las_oruguitas_heidelberg">
+                <span class="instagram-icon" aria-hidden="true">
+                    <i class="fab fa-instagram" aria-hidden="true" style="font-size:2rem; line-height:1;"></i>
+                </span>
+                <span class="instagram-handle">@las_oruguitas_heidelberg</span>
+            </a>
+        </div>
+        <div class="sponsors">
+            <h4>Con el apoyo de</h4>
+            <div class="sponsors-list">
+            <a href="https://www.mgh-heidelberg.de/" target="_blank" rel="noopener noreferrer" class="sponsor" aria-label="Ir a Mehrgenerationenhaus Heidelberg">
+                <img src="{{ '/assets/images/mgh-hd.png' | relative_url }}" alt="Mehrgenerationenhaus Heidelberg logo" class="sponsor-logo" loading="lazy">
+            </a>
             </div>
         </div>
     </div>

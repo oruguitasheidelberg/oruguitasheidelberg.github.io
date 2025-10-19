@@ -7,9 +7,10 @@ nav:
 hero:
   title: "Willkommen bei 🐛 Oruguitas Heidelberg!"
   subtitle: Wöchentliche Treffen für spanischsprachige Familien
-  meeting_day: "📅 Jeden Freitag"
-  meeting_time: "🕐 10:00 - 12:00 Uhr"
-  meeting_place: "📍 Mehrgenerationenhaus Heidelberg - Heinrich-Fuchs-Straße 85, 69126 Heidelberg"
+  meeting_day: "📅 Jeden Montag"
+  meeting_time: "🕐 16:00 - 18:00 Uhr"
+  meeting_place: "📍 Mehrgenerationenhaus Heidelberg"
+  meeting_address: "Heinrich-Fuchs-Straße 85, 69126 Heidelberg"
   cta: "Mach mit!"
   description: "Ein gemütlicher Raum, wo die Kleinsten singen, spielen, lesen und teilen. Spanischsprachige Familien sind herzlich eingeladen!"
 

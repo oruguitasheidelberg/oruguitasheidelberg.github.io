@@ -1,4 +1,4 @@
-:root {
+/* :root {
     --primary-color: #FF6B6B;
     --secondary-color: #4ECDC4;
     --accent-color: #FFE66D;
@@ -6,6 +6,15 @@
     --text-light: #ECF0F1;
     --background-light: #F8F9FA;
     --wolf-blue: #5DADE2;
+} */
+:root {
+    --primary-color: #ADC698;
+    --secondary-color: #72A2D3;
+    --accent-color: #C05746;
+    --text-dark: #2C3E50;
+    --text-light: #ECF0F1;
+    --background-light: #D0E3C4;
+    --wolf-blue: #ADC698;
 }
 
 * {
@@ -19,6 +28,17 @@ body {
     color: var(--text-dark);
     line-height: 1.6;
     background-color: var(--background-light);
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
 }
 
 .container {
@@ -108,6 +128,12 @@ header {
     font-size: 1.1rem;
     margin: 0.5rem 0;
     font-weight: 600;
+}
+
+.info-subitem {
+    font-size: 0.9rem;
+    margin: 0.25rem 0;
+    font-weight: 300;
 }
 
 .hero-description {
@@ -214,6 +240,21 @@ header {
     text-align: center;
 }
 
+
+
+.post-title {
+  margin-bottom: 0.5rem;
+}
+
+.post-meta {
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.post-content {
+  margin-bottom: 2rem;
+}
+
 /* Photos Section */
 .photos {
     background: white;
@@ -310,5 +351,81 @@ footer {
     
     .contact-methods {
         grid-template-columns: 1fr;
+    }
+}
+
+.instagram-follow {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.instagram-follow h3 {
+    margin: 0 0 .5rem 0;
+    font-size: 1.05rem;
+}
+.instagram-link {
+    display: inline-flex;
+    align-items: center;
+    gap: .6rem;
+    text-decoration: none;
+    color: inherit;
+    background: rgba(0,0,0,0.04);
+    padding: .5rem .75rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+.instagram-icon svg { width: 28px; height: 28px; display: block; }
+.instagram-handle { font-weight: 600; }
+@media (prefers-color-scheme: dark) {
+    .instagram-link { background: rgba(0, 0, 0, 0.109); }
+}
+
+.sponsors {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.sponsors-list {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center; /* center items inside the list */
+    flex-wrap: wrap;         /* allow wrapping on small screens */
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;          /* center the list within its container */
+}
+
+.sponsor {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.sponsor-logo {
+    max-width: 120px;
+    height: auto;
+    display: block;
+}
+
+.sponsor-name {
+    margin-top: .5rem;
+    font-weight: 600;
+    font-size: .95rem;
+    text-align: center;
+}
+
+@media (min-width: 600px) {
+    .sponsors-list {
+        justify-content: center; /* keep centered on larger screens */
     }
 }
