@@ -1,0 +1,22 @@
+title: Oruguitas Heidelberg
+description: Grupo de familias hispanohablantes en Heidelberg
+baseurl: "" 
+url: "https://oruguitasheidelberg.github.io" # Change to your GitHub Pages URL
+markdown: kramdown
+permalink: pretty
+
+# Default language
+defaults:
+  - scope:
+      path: "es"
+    values:
+      lang: es
+  - scope:
+      path: "de"
+    values:
+      lang: de
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

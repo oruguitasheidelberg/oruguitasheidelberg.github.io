@@ -1,0 +1,44 @@
+nav:
+  about: Über Uns
+  news: Neuigkeiten
+  photos: Fotos
+  contact: Kontakt
+
+hero:
+  title: "Willkommen bei 🐛 Oruguitas Heidelberg!"
+  subtitle: Wöchentliche Treffen für spanischsprachige Familien
+  meeting_day: "📅 Jeden Freitag"
+  meeting_time: "🕐 10:00 - 12:00 Uhr"
+  meeting_place: "📍 Mehrgenerationenhaus Heidelberg - Heinrich-Fuchs-Straße 85, 69126 Heidelberg"
+  cta: "Mach mit!"
+  description: "Ein gemütlicher Raum, wo die Kleinsten singen, spielen, lesen und teilen. Spanischsprachige Familien sind herzlich eingeladen!"
+
+about:
+  title: Über Uns
+  text: "Oruguitas Heidelberg ist eine Gruppe spanischsprachiger Familien, die sich wöchentlich trifft, um Erfahrungen und Kultur zu teilen und eine einladende Gemeinschaft für unsere Kinder zu schaffen. Bei unseren Treffen singen wir Kinderlieder, lesen Geschichten, teilen gesunde Snacks und lassen die Kleinen in einer familiären Umgebung auf Spanisch spielen und Kontakte knüpfen."
+  activities_title: "Unsere Aktivitäten"
+  activities:
+    - "🎵 Kinderlieder und Singspiele"
+    - "📚 Geschichten und Vorlesen"
+    - "🎨 Basteln und Spiele"
+    - "🍪 Gemeinsamer Snack"
+    - "👶 Sicherer Raum für Babys und Kleinkinder"
+
+news:
+  title: Neuigkeiten
+  no_news: Keine aktuellen Neuigkeiten. Besuchen Sie uns bald wieder!
+
+photos:
+  title: Fotogalerie
+  coming_soon: Bald laden wir Fotos unserer Treffen hoch.
+
+contact:
+  title: Kontakt
+  description: "Möchten Sie Oruguitas Heidelberg beitreten? Kontaktieren Sie uns!"
+  whatsapp: "Tritt unserer WhatsApp-Gruppe bei"
+  email: "Schick uns eine E-Mail"
+  email_address: "globitos.heidelberg@gmail.com"
+  find_us: "Finde uns auf"
+
+footer:
+  rights: "🐛 Oruguitas Heidelberg. Eine Gemeinschaft spanischsprachiger Familien in Heidelberg."

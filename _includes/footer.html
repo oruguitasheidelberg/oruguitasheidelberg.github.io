@@ -1,0 +1,11 @@
+{% if page.lang == 'es' %}
+    {% assign t = site.data.translations_es %}
+{% else %}
+    {% assign t = site.data.translations_de %}
+{% endif %}
+
+<footer>
+    <div class="container">
+        <p>{{ t.footer.rights }}</p>
+    </div>
+</footer>

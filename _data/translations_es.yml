@@ -1,0 +1,44 @@
+nav:
+  about: Sobre Nosotros
+  news: Noticias
+  photos: Fotos
+  contact: Contacto
+
+hero:
+  title: "¡Bienvenidos a 🐛 Oruguitas Heidelberg!"
+  subtitle: Encuentros semanales para familias hispanohablantes
+  meeting_day: "📅 Todos los viernes"
+  meeting_time: "🕐 10:00 - 12:00"
+  meeting_place: "📍 Mehrgenerationenhaus Heidelberg - Heinrich-Fuchs-Straße 85, 69126 Heidelberg"
+  cta: "¡Únete a nosotros!"
+  description: "Un espacio acogedor donde los más pequeños cantan, juegan, leen y comparten. ¡Familias hispanohablantes, están invitadas!"
+
+about:
+  title: Sobre Nosotros
+  text: "Oruguitas Heidelberg es un grupo de familias hispanohablantes que se reúne semanalmente para compartir experiencias, cultura y crear una comunidad acogedora para nuestros niños. En nuestros encuentros cantamos canciones infantiles, leemos cuentos, compartimos meriendas y dejamos que los pequeños jueguen y socialicen en un ambiente familiar y en español."
+  activities_title: "Nuestras Actividades"
+  activities:
+    - "🎵 Canciones y rondas infantiles"
+    - "📚 Cuentacuentos y lectura"
+    - "🎨 Manualidades y juegos"
+    - "🍪 Merienda compartida"
+    - "👶 Espacio seguro para bebés y niños pequeños"
+
+news:
+  title: Noticias
+  no_news: No hay noticias recientes. ¡Visítanos pronto!
+
+photos:
+  title: Galería de Fotos
+  coming_soon: Próximamente subiremos fotos de nuestros encuentros.
+
+contact:
+  title: Contacto
+  description: "¿Quieres unirte a Oruguitas Heidelberg? ¡Contáctanos!"
+  whatsapp: "Únete a nuestro grupo de WhatsApp"
+  email: "Envíanos un correo"
+  email_address: "oruguitas.heidelberg@gmail.com"
+  find_us: "Encuéntranos en"
+
+footer:
+  rights: "🐛 Oruguitas Heidelberg. Una comunidad de familias hispanohablantes en Heidelberg."

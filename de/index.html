@@ -1,0 +1,75 @@
+---
+layout: default
+lang: de
+---
+
+{% assign t = site.data.translations_de %}
+
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1 class="hero-title">{{ t.hero.title }}</h1>
+            <p class="hero-subtitle">{{ t.hero.subtitle }}</p>
+            <div class="meeting-info">
+                <div class="info-item">{{ t.hero.meeting_day }}</div>
+                <div class="info-item">{{ t.hero.meeting_time }}</div>
+                <div class="info-item">{{ t.hero.meeting_place }}</div>
+            </div>
+            <p class="hero-description">{{ t.hero.description }}</p>
+            <a href="#kontakt" class="cta-button">{{ t.hero.cta }}</a>
+        </div>
+        <div class="hero-illustration">
+            <div class="wolf-emoji">🐛</div>
+        </div>
+    </div>
+</section>
+
+<section id="uber-uns" class="section about">
+    <div class="container">
+        <h2 class="section-title">{{ t.about.title }}</h2>
+        <p class="about-text">{{ t.about.text }}</p>
+        <h3>{{ t.about.activities_title }}</h3>
+        <ul class="activities-list">
+            {% for activity in t.about.activities %}
+            <li>{{ activity }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>
+
+<section id="neuigkeiten" class="section news">
+    <div class="container">
+        <h2 class="section-title">{{ t.news.title }}</h2>
+        <p>{{ t.news.no_news }}</p>
+    </div>
+</section>
+
+<section id="fotos" class="section photos">
+    <div class="container">
+        <h2 class="section-title">{{ t.photos.title }}</h2>
+        <p>{{ t.photos.coming_soon }}</p>
+        <div class="photo-grid">
+            <!-- Photos will be added here -->
+        </div>
+    </div>
+</section>
+
+<section id="kontakt" class="section contact">
+    <div class="container">
+        <h2 class="section-title">{{ t.contact.title }}</h2>
+        <p>{{ t.contact.description }}</p>
+        <div class="contact-methods">
+            <div class="contact-card">
+                <div class="contact-icon">💬</div>
+                <h3>WhatsApp</h3>
+                <p>{{ t.contact.whatsapp }}</p>
+            </div>
+            <div class="contact-card">
+                <div class="contact-icon">📧</div>
+                <h3>Email</h3>
+                <p>{{ t.contact.email }}</p>
+                <a href="mailto:{{ t.contact.email_address }}">{{ t.contact.email_address }}</a>
+            </div>
+        </div>
+    </div>
+</section>
