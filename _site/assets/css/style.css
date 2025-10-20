@@ -77,11 +77,17 @@ header {
 .language-switcher .lang-link {
     background: rgba(255,255,255,0.2);
     color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
+    /* responsive padding: smaller on narrow screens, same as before on desktop */
+    padding: clamp(0.35rem, 1.2vw, 0.8rem) clamp(0.6rem, 2.5vw, 1rem);
+    /* responsive border radius */
+    border-radius: clamp(10px, 3.5vw, 20px);
     text-decoration: none;
     font-weight: 600;
-    transition: all 0.3s ease;
+    /* responsive font size */
+    font-size: clamp(0.85rem, 1.6vw, 1rem);
+    line-height: 1;
+    display: inline-block;
+    transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
 }
 
 .language-switcher .lang-link:hover {
