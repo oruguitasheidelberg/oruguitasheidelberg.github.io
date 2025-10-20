@@ -6,7 +6,7 @@ nav:
 
 hero:
   title: "Willkommen bei 🐛 Oruguitas Heidelberg!"
-  subtitle: Wöchentliche Treffen für spanischsprachige Familien
+  subtitle: Spanischsprachige Kindergruppe - Wöchentliche Familientreffen
   meeting_day: "📅 Jeden Montag"
   meeting_time: "🕐 16:00 - 18:00 Uhr"
   meeting_place: "📍 Mehrgenerationenhaus Heidelberg"
@@ -38,8 +38,10 @@ contact:
   description: "Möchten Sie Oruguitas Heidelberg beitreten? Kontaktieren Sie uns!"
   whatsapp: "Tritt unserer WhatsApp-Gruppe bei"
   email: "Schick uns eine E-Mail"
-  email_address: "globitos.heidelberg@gmail.com"
+  instagram: "Folge uns auf Instagram"
+  email_address: "Las_Oruguitas@outlook.com"
   find_us: "Finde uns auf"
 
 footer:
-  rights: "🐛 Oruguitas Heidelberg. Eine Gemeinschaft spanischsprachiger Familien in Heidelberg."
+  rights: "🐛 Las Oruguitas Heidelberg. Eine Gemeinschaft spanischsprachiger Familien in Heidelberg."
+  sponsor: "Mit Unterstützung von"

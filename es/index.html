@@ -16,7 +16,7 @@ lang: es
                 <div class="info-item">
                     {{ t.hero.meeting_place }}
                     <p class="info-subitem">
-                        <a href="https://www.google.com/maps/search/{{ t.hero.meeting_place | url_encode }}" target="_blank" rel="noopener noreferrer">
+                        <a href="https://maps.app.goo.gl/LBiyVUGFnEc9xE2e9" target="_blank" rel="noopener noreferrer">
                         {{ t.hero.meeting_address }}
                     </a>
                     </p>
@@ -47,16 +47,6 @@ lang: es
 <section id="noticias" class="section news">
     <div class="container">
         <h2 class="section-title">{{ t.news.title }}</h2>
-        <!--p>{{ t.news.no_news }}</p!-->
-        <style>
-        .news-cards { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1rem; }
-        .news-card { background: #ffffff7d; padding: 1rem; border-radius: 8px; box-shadow: 0 1px 4px rgba(0,0,0,0.1); width: 100%; max-width: 320px; box-sizing: border-box; }
-        .news-card a { text-decoration: none; color: inherit; font-weight: 600; display: block; margin-bottom: .5rem; }
-        .news-excerpt { margin: 0; color: #555; font-size: .95rem; }
-        @media (min-width: 900px) {
-            .news-card { flex: 1 1 calc(33.333% - 1rem); max-width: none; }
-        }
-        </style>
 
         <div class="news-cards">
             {% for post in site.posts limit:3 %}
@@ -101,7 +91,7 @@ lang: es
             </div>
         </div>
         <div class="instagram-follow">
-            <h3>Síguenos en Instagram</h3>
+            <h3>{{ t.contact.instagram }}</h3>
             <a class="instagram-link" href="https://www.instagram.com/las_oruguitas_heidelberg/" target="_blank" rel="noopener noreferrer" aria-label="Abrir Instagram de las_oruguitas_heidelberg">
                 <span class="instagram-meta" style="display:inline-flex;flex-direction:column;align-items:center;gap:.25rem;">
                     <span class="instagram-icon" aria-hidden="true">
@@ -110,14 +100,6 @@ lang: es
                     <span class="instagram-handle" style="font-size:0.9rem;">@las_oruguitas_heidelberg</span>
                 </span>
             </a>
-        </div>
-        <div class="sponsors">
-            <h4>Con el apoyo de</h4>
-            <div class="sponsors-list">
-            <a href="https://www.mgh-heidelberg.de/" target="_blank" rel="noopener noreferrer" class="sponsor" aria-label="Ir a Mehrgenerationenhaus Heidelberg">
-                <img src="{{ '/assets/images/mgh-hd.png' | relative_url }}" alt="Mehrgenerationenhaus Heidelberg logo" class="sponsor-logo" loading="lazy">
-            </a>
-            </div>
         </div>
     </div>
 </section>

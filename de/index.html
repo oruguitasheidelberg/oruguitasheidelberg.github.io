@@ -14,9 +14,12 @@ lang: de
                 <div class="info-item">{{ t.hero.meeting_day }}</div>
                 <div class="info-item">{{ t.hero.meeting_time }}</div>
                 <div class="info-item">
-                    <a href="https://www.google.com/maps/search/{{ t.hero.meeting_place | url_encode }}" target="_blank" rel="noopener noreferrer">
-                        {{ t.hero.meeting_place }}
+                    {{ t.hero.meeting_place }}
+                    <p class="info-subitem">
+                        <a href="https://maps.app.goo.gl/LBiyVUGFnEc9xE2e9" target="_blank" rel="noopener noreferrer">
+                        {{ t.hero.meeting_address }}
                     </a>
+                    </p>
                 </div>
             </div>
             <p class="hero-description">{{ t.hero.description }}</p>
@@ -44,7 +47,15 @@ lang: de
 <section id="neuigkeiten" class="section news">
     <div class="container">
         <h2 class="section-title">{{ t.news.title }}</h2>
-        <p>{{ t.news.no_news }}</p>
+
+        <div class="news-cards">
+            {% for post in site.posts limit:3 %}
+            <article class="news-card">
+                <a href="{{ post.url | relative_url }}">{{ post.date | date: "%-d.%m.%Y" }} - {{ post.title }}</a>
+                <p class="news-excerpt">{{ post.excerpt | strip_html | truncate:120 }}</p>
+            </article>
+            {% endfor %}
+        </div>
     </div>
 </section>
 
@@ -64,16 +75,32 @@ lang: de
         <p>{{ t.contact.description }}</p>
         <div class="contact-methods">
             <div class="contact-card">
-                <div class="contact-icon">💬</div>
+                <div class="contact-icon" aria-hidden="true">
+                    <i class="fab fa-whatsapp" aria-hidden="true" style="font-size:3rem; line-height:1;"></i>
+                </div>
                 <h3>WhatsApp</h3>
                 <p>{{ t.contact.whatsapp }}</p>
             </div>
             <div class="contact-card">
-                <div class="contact-icon">📧</div>
+                <div class="contact-icon" aria-hidden="true">
+                    <i class="fas fa-envelope" aria-hidden="true" style="font-size:3rem; line-height:1;"></i>
+                </div>
                 <h3>Email</h3>
                 <p>{{ t.contact.email }}</p>
                 <a href="mailto:{{ t.contact.email_address }}">{{ t.contact.email_address }}</a>
             </div>
         </div>
+        <div class="instagram-follow">
+            <h3>{{ t.contact.instagram }}</h3>
+            <a class="instagram-link" href="https://www.instagram.com/las_oruguitas_heidelberg/" target="_blank" rel="noopener noreferrer" aria-label="Abrir Instagram de las_oruguitas_heidelberg">
+                <span class="instagram-meta" style="display:inline-flex;flex-direction:column;align-items:center;gap:.25rem;">
+                    <span class="instagram-icon" aria-hidden="true">
+                        <i class="fab fa-instagram" aria-hidden="true" style="font-size:3rem; line-height:1;"></i>
+                    </span>
+                    <span class="instagram-handle" style="font-size:0.9rem;">@las_oruguitas_heidelberg</span>
+                </span>
+            </a>
+        </div>
+
     </div>
 </section>

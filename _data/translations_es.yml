@@ -6,7 +6,7 @@ nav:
 
 hero:
   title: "¡Bienvenidos a 🐛 Oruguitas Heidelberg!"
-  subtitle: Encuentros semanales para familias hispanohablantes
+  subtitle: Grupo infantil hispanohablante - Encuentros semanales para familias
   meeting_day: "📅 Todos los lunes"
   meeting_time: "🕐 16:00 - 18:00"
   meeting_place: "📍 Mehrgenerationenhaus Heidelberg"
@@ -38,8 +38,10 @@ contact:
   description: "¿Quieres unirte a Oruguitas Heidelberg? ¡Contáctanos!"
   whatsapp: "Únete a nuestro grupo de WhatsApp"
   email: "Envíanos un correo"
-  email_address: "oruguitas.heidelberg@gmail.com"
+  instagram: "Síguenos en Instagram"
+  email_address: "Las_Oruguitas@outlook.com"
   find_us: "Encuéntranos en"
 
 footer:
-  rights: "🐛 Oruguitas Heidelberg. Una comunidad de familias hispanohablantes en Heidelberg."
+  rights: "🐛 Las Oruguitas Heidelberg. Una comunidad de familias hispanohablantes en Heidelberg."
+  sponsor: "Con el apoyo de"
