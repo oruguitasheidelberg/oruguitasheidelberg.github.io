@@ -166,9 +166,21 @@ header {
 }
 
 .hero-illustration {
+    /* responsive size variable: small on phones, scales with viewport, capped on large screens */
+    --hero-illustration-size: clamp(200px, 35vw, 520px);
+
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* apply the variable to images inside the illustration */
+.hero-illustration img {
+    width: var(--hero-illustration-size);
+    height: auto;
+    max-width: 100%;
+    display: block;
+    object-fit: contain;
 }
 
 .wolf-emoji {
