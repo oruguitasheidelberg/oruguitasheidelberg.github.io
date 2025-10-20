@@ -85,12 +85,16 @@ lang: es
         <p>{{ t.contact.description }}</p>
         <div class="contact-methods">
             <div class="contact-card">
-                <div class="contact-icon">💬</div>
+                <div class="contact-icon" aria-hidden="true">
+                    <i class="fab fa-whatsapp" aria-hidden="true" style="font-size:3rem; line-height:1;"></i>
+                </div>
                 <h3>WhatsApp</h3>
                 <p>{{ t.contact.whatsapp }}</p>
             </div>
             <div class="contact-card">
-                <div class="contact-icon">📧</div>
+                <div class="contact-icon" aria-hidden="true">
+                    <i class="fas fa-envelope" aria-hidden="true" style="font-size:3rem; line-height:1;"></i>
+                </div>
                 <h3>Email</h3>
                 <p>{{ t.contact.email }}</p>
                 <a href="mailto:{{ t.contact.email_address }}">{{ t.contact.email_address }}</a>
@@ -99,10 +103,12 @@ lang: es
         <div class="instagram-follow">
             <h3>Síguenos en Instagram</h3>
             <a class="instagram-link" href="https://www.instagram.com/las_oruguitas_heidelberg/" target="_blank" rel="noopener noreferrer" aria-label="Abrir Instagram de las_oruguitas_heidelberg">
-                <span class="instagram-icon" aria-hidden="true">
-                    <i class="fab fa-instagram" aria-hidden="true" style="font-size:2rem; line-height:1;"></i>
+                <span class="instagram-meta" style="display:inline-flex;flex-direction:column;align-items:center;gap:.25rem;">
+                    <span class="instagram-icon" aria-hidden="true">
+                        <i class="fab fa-instagram" aria-hidden="true" style="font-size:3rem; line-height:1;"></i>
+                    </span>
+                    <span class="instagram-handle" style="font-size:0.9rem;">@las_oruguitas_heidelberg</span>
                 </span>
-                <span class="instagram-handle">@las_oruguitas_heidelberg</span>
             </a>
         </div>
         <div class="sponsors">
